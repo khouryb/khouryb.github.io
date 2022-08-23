@@ -10,6 +10,286 @@
       crossorigin="anonymous"
     ></script>
     <title>Ben's Style Guide</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #827f7d;
+    font-family: "DM Serif Display", serif;
+}
+
+h1, ul, a {
+    font-family: "DM Serif Display", serif;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Nav Bar */
+
+ul {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom:3px solid #3c3c3c;
+    box-shadow: 10px 0 5px 5px grey;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-list li a {
+    transition: all 0.3s ease 0s;
+}
+
+#one:hover {
+    
+    color: #ffb5e8;
+}
+
+#two:hover {
+    color: #aff8d8;
+}
+
+#three:hover {
+    
+    color: #85e3ff;
+}
+
+#four:hover {
+    color: #ffffd1;
+}
+#one:hover, #two:hover, #three:hover, #four:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
+}
+/* Colors Section */
+
+.color-container {
+    position: relative;
+    top: 105px;
+    background-color: #FCF5E5;
+    width: 100%;
+    border-bottom: 2px solid brown;
+}
+
+.h-color-container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1500px;
+
+    background-color: #FCF5E5;
+}
+
+.h-colors {
+    margin-left: 10%;
+    max-width: 1200px;
+}
+
+.h-colors {
+    background-color: #FCF5E5;
+    padding: 10px 10px 0;
+    margin-left: 10%;
+}
+
+.colors {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #FCF5E5;
+}
+
+.color-items {
+    height: 200px;
+    width: 160px;
+    padding: 5px 5px;
+    transition: all 0.2s ease 0s;
+    margin: 15px 15px;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: end;
+    font-family: "DM Serif Display", serif;
+}
+
+#peach {
+    background-color: #ffb7b2;
+    color: #ffb7b2;
+}
+
+#green {
+    background-color: #b5ead7;
+    color: #b5ead7;
+}
+
+#blue {
+    background-color: #85e3ff;
+    color: #85e3ff;
+}
+
+#yellow {
+    background-color: #fff5ba;
+    color: #fff5ba;
+}
+
+#pink {
+    background-color: #ffccf9;
+    color: #ffccf9;
+}
+
+#lilac {
+    background-color: #ff9cee;
+    color: #ff9cee;
+}
+
+.fa-umbrella-beach,.fa-ice-cream,.fa-leaf,.fa-lemon,.fa-water,.fa-raspberry-pi {
+    margin: auto;
+    position: relative;
+    bottom: 60px;
+}
+
+.fa-umbrella-beach {
+    color: #ffb7b2;
+    background-color: #ffb7b2;
+}
+
+#peach:hover .fa-umbrella-beach {
+    color: #ff574b;
+}
+
+#peach:hover {
+    color: #ff574b;
+}
+
+.fa-leaf {
+    color: #b5ead7;
+    background-color: #b5ead7;
+}
+
+#green:hover .fa-leaf {
+    color: #2fa47a;
+}
+
+#green:hover {
+    color: #2fa47a;
+}
+
+.fa-water {
+    color: #85e3ff;
+    background-color: #85e3ff;
+}
+
+#blue:hover .fa-water{
+    color: #0098c6;
+}
+
+#blue:hover {
+    color: #0098c6;
+}
+
+.fa-lemon {
+    color: #fff5ba;
+    background-color: #fff5ba;
+}
+
+#yellow:hover .fa-lemon {
+    color: #f5d100;
+}
+
+#yellow:hover {
+    color: #f5d100;
+}
+
+.fa-ice-cream {
+    color: #ffccf9;
+    background-color: #ffccf9;
+}
+
+#pink:hover .fa-ice-cream{
+    color: #d600b2;
+}
+
+#pink:hover {
+    color: #d600b2;
+}
+
+.fa-raspberry-pi {
+    color: #ff9cee;
+    background-color: #ff9cee;
+}
+
+#lilac:hover .fa-raspberry-pi {
+    color: #ff16d7;
+}
+
+#lilac:hover {
+    color: #ff16d7;
+}
+
+.color-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 5px 12px #3c3c3c;
+    
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="nav-header">Ben's Design System</h1>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a id="one" href="#">Colors</a></li>
+          <li class="nav-item"><a id="two" href="#">Font</a></li>
+          <li class="nav-item"><a id="three" href="#">Font Style</a></li>
+          <li class="nav-item"><a id="four" href="#">Buttons</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="color-container">
+      <div class="h-color-container">
+      <h2 class="h-colors">Since it's summer, here are some pastels...</h2>
+    </div>
+      <div class="colors">
+        
+        <div class="color-items" id="peach">Peach<br />#FFB7B2<i class="fa-solid fa-3x fa-umbrella-beach"></i></div>
+        <div class="color-items" id="green">Mint Green<br />#B5EAD7<i class="fa-solid fa-3x fa-leaf"></i></div>
+        <div class="color-items" id="blue">Pastel Blue<br />#85E3FF<i class="fa-solid fa-3x fa-water"></i></div>
+        <div class="color-items" id="yellow">
+          <br />
+          Mellow Yellow<br />#FFF5BA<i class="fa-regular fa-3x fa-lemon"></i>
+        </div>
+        <div class="color-items" id="pink">Pinky Finger<br />#FFCCF9<i class="fa-solid fa-3x fa-ice-cream"></i></div>
+        <div class="color-items" id="lilac">Light Lilac<br />#FF9CEE<i class="fa-brands fa-3x fa-raspberry-pi"></i></div>
+      </div>
+    </div>
+  </body>
+</html>
+
   </head>
   <body>
     <header>
