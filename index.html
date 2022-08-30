@@ -11,7 +11,18 @@
     ></script>
     <title>Ben's Style Guide</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+      
+/* Sans-Serif fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Serif fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -42,10 +53,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     border-bottom:3px solid #3c3c3c;
-    box-shadow: 10px 0 5px 5px grey;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+    box-shadow: 10px 0 5px 5px rgb(84, 84, 84);
     width: 100%;
 }
 
@@ -87,7 +95,6 @@ header {
 
 .color-container {
     position: relative;
-    top: 105px;
     background-color: #FCF5E5;
     width: 100%;
     border-bottom: 2px solid brown;
@@ -253,8 +260,42 @@ header {
 
 .color-items:hover {
     transform: translateY(-10px);
-    box-shadow: 7px 5px 12px #3c3c3c;
+    box-shadow: 6px 5px 10px #b4b4b4;
     
+}
+
+/* Fonts Section */
+
+.font-section {
+    position: relative;
+    background-color: #FCF5E5;
+    width: 100%;
+    border-bottom: 2px solid brown;
+}
+
+.font-header {
+    background-color: #FCF5E5;
+}
+
+.font-container h3{
+    background-color: #FCF5E5;
+    width: 100%;
+}
+
+.font-section {
+    display: flex;
+}
+
+.dm-serif-display {
+    font-family: "DM Serif Display";
+}
+
+.libre-bakersfield {
+    font-family: "Libre Baskerville";
+}
+
+.league-sparten li{
+    font-family: "League Spartan";
 }
     </style>
   </head>
@@ -270,22 +311,133 @@ header {
         </ul>
       </nav>
     </header>
-    <div class="color-container">
+    <section class="color-container">
       <div class="h-color-container">
-      <h2 class="h-colors">Since it's summer, here are some pastels...</h2>
-    </div>
+        <h2 class="h-colors">Since it's summer, here are some pastels...</h2>
+      </div>
       <div class="colors">
-        
-        <div class="color-items" id="peach">Peach<br />#FFB7B2<i class="fa-solid fa-3x fa-umbrella-beach"></i></div>
-        <div class="color-items" id="green">Mint Green<br />#B5EAD7<i class="fa-solid fa-3x fa-leaf"></i></div>
-        <div class="color-items" id="blue">Pastel Blue<br />#85E3FF<i class="fa-solid fa-3x fa-water"></i></div>
+        <div class="color-items" id="peach">
+          Peach<br />#FFB7B2<i class="fa-solid fa-3x fa-umbrella-beach"></i>
+        </div>
+        <div class="color-items" id="green">
+          Mint Green<br />#B5EAD7<i class="fa-solid fa-3x fa-leaf"></i>
+        </div>
+        <div class="color-items" id="blue">
+          Pastel Blue<br />#85E3FF<i class="fa-solid fa-3x fa-water"></i>
+        </div>
         <div class="color-items" id="yellow">
           <br />
           Mellow Yellow<br />#FFF5BA<i class="fa-regular fa-3x fa-lemon"></i>
         </div>
-        <div class="color-items" id="pink">Pinky Finger<br />#FFCCF9<i class="fa-solid fa-3x fa-ice-cream"></i></div>
-        <div class="color-items" id="lilac">Light Lilac<br />#FF9CEE<i class="fa-brands fa-3x fa-raspberry-pi"></i></div>
+        <div class="color-items" id="pink">
+          Pinky Finger<br />#FFCCF9<i class="fa-solid fa-3x fa-ice-cream"></i>
+        </div>
+        <div class="color-items" id="lilac">
+          Light Lilac<br />#FF9CEE<i
+            class="fa-brands fa-3x fa-raspberry-pi"
+          ></i>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Fonts -->
+
+    <h2 class="font-header">Fonts</h2>
+    <section class="font-section">
+      <div class="font-container">
+        <h3>Serif</h3>
+        <ul class="serif-list">
+          <li class="serif-title dm-serif-display">DM Serif Display</li>
+          <li class="dm-serif-display">
+            The quick brown fox jumps over the lazy dog.
+          </li>
+          <li class="dm-serif-display">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="dm-serif-display">
+            <b>The quick brown fox jumps over the lazy dog.</b>
+          </li>
+        </ul>
+        <ul class="serif-list libre-baskerville">
+          <li class="serif-title libre-baskerville">Libre Baskerville</li>
+          <li class="libre-baskerville">
+            The quick brown fox jumps over the lazy dog.
+          </li>
+          <li class="libre-baskerville">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="libre-baskerville">
+            <b>The quick brown fox jumps over the lazy dog.</b>
+          </li>
+        </ul>
+        <ul class="serif-list">
+          <li class="serif-title playfair-display">Playfair Display</li>
+          <li class="playfair-display">
+            The quick brown fox jumps over the lazy dog.
+          </li>
+          <li class="playfair-display">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="playfair-display">
+            <b>The quick brown fox jumps over the lazy dog.</b>
+          </li>
+        </ul>
+        <ul class="serif-list">
+          <li class="serif-title lora">Lora</li>
+          <li class="lora">The quick brown fox jumps over the lazy dog.</li>
+          <li class="lora">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="lora">
+            <b>The quick brown fox jumps over the lazy dog.</b>
+          </li>
+        </ul>
+      </div>
+      <div class="font-container">
+        <h3>Sans-serif</h3>
+        <ul class="sans-serif-list">
+          <li class="sans-serif-title roboto condensed">Roboto Condensed</li>
+          <li class="condensed">
+            The quick brown fox jumps over the lazy dog.
+          </li>
+          <li class="condensed">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="condensed">
+            <b>The quick brown fox jumps over the lazy dog.</b>
+          </li>
+        </ul>
+        <ul class="sans-serif-list league-spartan">
+          <li class="sans-serif-title">League Spartan</li>
+          <li>The quick brown fox jumps over the lazy dog.</li>
+          <li>
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li>
+            <em>The quick brown fox jumps over the lazy dog.</em>
+          </li>
+        </ul>
+        <ul class="sans-serif-list">
+          <li class="sans-serif-title lato">Lato</li>
+          <li class="lato">The quick brown fox jumps over the lazy dog.</li>
+          <li class="lato">
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li class="lato">
+            <em>The quick brown fox jumps over the lazy dog.</em>
+          </li>
+        </ul>
+        <ul class="sans-serif-list">
+          <li class="sans-serif-title montserrat">Montserrat</li>
+          <li>The quick brown fox jumps over the lazy dog.</li>
+          <li>
+            <i>The quick brown fox jumps over the lazy dog.</i>
+          </li>
+          <li>
+            <em>The quick brown fox jumps over the lazy dog.</em>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
